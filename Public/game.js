@@ -16,7 +16,7 @@ function game() {
 
   function getHumanChoice() {
     choice = prompt("Rock, paper, scissors").toUpperCase();
-    console.clear();
+    // console.clear();
     if (choice == "ROCK") {
       return 1;
     } else if (choice == "PAPER") {
@@ -50,7 +50,7 @@ function game() {
 
     if (rounds < 5) {
       round();
-    } else alert(finalScore());
+    } else finalScore();
   }
   console.log(rounds);
   function finalScore() {
@@ -58,8 +58,7 @@ function game() {
       return alert("Computer wins");
     } else if (computerScore < humanScore) {
       return alert("You win.");
-    } else return "It's a draw.";
+    } else return alert("It's a draw.");
   }
   round();
 }
-game();
