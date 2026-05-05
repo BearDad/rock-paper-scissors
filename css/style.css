@@ -1,9 +1,84 @@
-* {
-  outline: 1px solid red;
-}
+/* * { */
+/* outline: 1px solid black; */
+/* } */
 h1 {
   text-align: center;
 }
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+body {
+  display: flex;
+  background-image: url("../images/background.png");
+  min-height: 100vh;
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+#main-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  width: 60vw;
+  height: 60vh;
+  background-color: white; /* or whatever color */
+  cursor: pointer;
+}
+#main-screen-text {
+  display: inline-block;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  width: 80vw;
+  height: 80vh;
+  background-color: white; /* or whatever color */
+  outline: 1px solid black;
+}
+.game-screen {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+.game-animation-area {
+  display: flex;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  width: 40vw;
+  height: 50vh;
+  background-color: white; /* or whatever color */
+  align-items: center;
+  justify-content: center;
+}
+.game-gui {
+  display: flex;
+  border-radius: 12px;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  width: 40vw;
+  height: 5vh;
+  background-color: white; /* or whatever color */
+  align-items: center;
+  justify-content: center;
+}
+
+#btn1,
+#btn2,
+#btn3 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0.5rem 4rem 0.5rem 4rem;
 }
