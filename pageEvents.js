@@ -1,6 +1,17 @@
 function switchLogic() {
   card = document.getElementById("main-screen");
+  card.classList.add("zoomOut");
+  card.addEventListener(
+    "animationend",
+    () => {
+      card.classList.add("hidden");
+      zoomIn();
+    },
+    { once: true },
+  );
+}
+function zoomIn() {
   game = document.getElementById("game");
-  card.classList.add("hidden");
   game.classList.remove("hidden");
+  game.classList.add("zoomIn");
 }
