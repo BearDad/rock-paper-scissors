@@ -3,35 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rock Paper Scissors</title>
+    <title>Rock, paper, scissors!!!</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/animations.css" rel="stylesheet" />
   </head>
   <body>
-    <div>
-      <h1>Rock, Paper Scissors</h1>
+    <div class="main-screen" id="main-screen" onclick="switchLogic()">
+      <span class="main-screen" id="main-screen-text">press to play </span>
     </div>
-    <p>
-      Computer score: <span id="computerScore"> </span> human score:
-      <span id="humanScore"></span>
-    </p>
-    <p>
-      <button type="button" id="rBtn" onclick="getHumanChoice('rock')">
-        Rock
-      </button>
-      <button type="button" id="pBtn" onclick="getHumanChoice('paper')">
-        Paper
-      </button>
-      <button type="button" id="sBtn" onclick="getHumanChoice('scissors')">
-        Scissors
-      </button>
-      <span id="result"></span>
-    </p>
-    <p id="finalResult">
-      <button class="hidden" id="restartBtn" type="btn" onclick="reset()">
-        restart
-      </button>
-      <span class="hidden" id="finalResultText"></span>
-    </p>
-    <script src="./game.js"></script>
+
+    <div class="game hidden" id="game">
+      <div class="game-screen" id="game-screen">
+        <div class="game-animation-area" id="">screen</div>
+        <div class="game-gui" id="">
+          <button type="button" id="btn1">1</button>
+          <button type="button" id="btn2">2</button>
+          <button type="button" id="btn3">3</button>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="./pageEvents.js"></script>
 </html>

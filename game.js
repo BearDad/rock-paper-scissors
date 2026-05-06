@@ -2,7 +2,7 @@ let humanScore = 0;
 let computerScore = 0;
 let rounds = 0;
 function getComputerChoice() {
-  x = Math.random();
+  let x = Math.random();
   if (x > 0 && x < 0.33) {
     return 1;
   } else if (x >= 0.33 && x < 0.66) {
@@ -28,7 +28,7 @@ function compare(y) {
   const text = document.getElementById("result");
   if (y === undefined) return "invalid option";
   rounds++;
-  console.log(rounds);
+  // console.log(rounds);
   if (x < y) {
     humanScore++;
     text.textContent = "You win.";
@@ -42,9 +42,7 @@ function compare(y) {
   document.getElementById("computerScore").textContent = computerScore;
   if (rounds == 5) finalScore();
 }
-function score() {
-  return "Your score: " + humanScore + "    Computer score: " + computerScore;
-}
+
 function finalScore() {
   const text = document.getElementById("finalResultText");
   text.classList.remove("hidden");
